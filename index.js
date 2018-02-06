@@ -4,9 +4,11 @@ let iTimer = 0;
 
 function clipPage() {
     clearTimeout(iTimer);
-    const randX = Math.ceil(Math.random()*100 + 800);
-    const randY = Math.ceil(Math.random()*100 + 700);
-    const shellString = `adb shell input tap ${randX} ${randY}`;
+    const randX = Math.ceil(Math.random()*50);
+	const randY = Math.ceil(Math.random()*100 + 500);
+    const x1 = randX + 380;
+	const x2 = randX;
+    const shellString = `adb shell input swipe ${x1} ${randY} ${x2} ${randY}`;
     shell.exec(shellString);
     
     /** 随机时间 */
