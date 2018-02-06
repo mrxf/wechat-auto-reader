@@ -1,0 +1,7 @@
+{
+    "shell": {
+        "screenshot": "adb shell /system/bin/screencap -p /sdcard/we-read-screenshot.png",
+        "pull": "adb pull /sdcard/we-read-screenshot.png ./assets",
+        "pixel": "adb shell \"dumpsys window | grep mUnrestrictedScreen\""
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "wechat-reader",
+  "version": "0.0.1",
+  "description": "wechat auto reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "zhshy",
+  "license": "MIT",
+  "dependencies": {
+    "gm": "^1.23.1",
+    "node-tesseract": "^0.2.7",
+    "shelljs": "^0.7.8",
+    "tesseract.js": "^1.0.10"
+  }
+}
